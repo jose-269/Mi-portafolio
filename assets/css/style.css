@@ -3,14 +3,25 @@
 }
 
 
-nav .logo-letras {
+nav .logoLetras {
     font-family: 'Monoton', cursive;
     font-size: 40px;
+    
+    letter-spacing: 12px;
+}
+
+.logoLetras {
+    font-family: 'Monoton', cursive;
+    font-size: 40px;
+    letter-spacing: 12px;
 }
 
 .barra {
     background-color: #064D53;
     border-bottom: 5px solid #fff;
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
 
 }
 
@@ -32,7 +43,12 @@ nav .logo-letras {
     margin: 0;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 6px;
-        
+}
+
+@media only screen and (max-width:367px){
+    .titulo {
+        font-size: 50px;
+    }
 }
 
 .separadorHero {
@@ -74,6 +90,13 @@ nav .logo-letras {
     
 }
 
+@media only screen and (max-width:767px) {
+    .separadorDesc{
+        width: 300px;
+        
+    }
+}
+
 .miExperiencia {
     background-color: #064D53;
 }
@@ -82,11 +105,15 @@ nav .logo-letras {
     font-weight: 700;
     font-size: 65px;
     font-family: 'Oswald', sans-serif;
-    
     width: 80%;
     margin: 0 auto;
     text-align: center;
-    
+}
+
+@media only screen and (max-width:767px) {
+    .titExp {
+        font-size: 50px;
+    }
 }
 
 .fondoCar {
@@ -135,7 +162,32 @@ nav .logo-letras {
 }
 
 .trabajos h2 {
-    padding-top: 155px;
+    padding-top: 110px;
+}
+
+@media only screen and (max-width:920px){
+    .trabajos h2 {
+        font-size: 55px;
+    }
+}
+
+.pie {
+    background-color:  #064D53;
+    border-top: 5px solid #000;
+}
+
+.pie .logoLetras {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.pie a {
+    
+    color: #fff;
+}
+
+.pie p {
+    font-size: 20px;
 }
 
 

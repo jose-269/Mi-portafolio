@@ -27,9 +27,9 @@
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg navbar-light py-0 barra">
+    <nav class="navbar navbar-expand-lg fixed navbar-light py-0 barra">
         <div class="container">
-            <a class="navbar-brand logo-letras" href="index.html">JM</a>
+            <a class="navbar-brand logoLetras text-white" href="index.html">JM</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" 
             data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" 
             aria-expanded="false" aria-label="Toggle navigation">
@@ -37,9 +37,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav ml-auto">
-                <a class="nav-link active" href="#">Inicio <span class="sr-only">(current)</span></a>
-                <a class="nav-link" href="#">Trabajos</a>
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link active text-white" href="#">Inicio <span class="sr-only">(current)</span></a>
+                <a class="nav-link text-white" href="#">Trabajos</a>
+                <a class="nav-link text-white" href="#">Contacto</a>
               </div>
             </div>
         </div>
@@ -48,10 +48,10 @@
     <section class="hero">
         <div class="container pt-5">
             <div class="row pt-5">
-                <div class="miFoto col-6 pb-5">
+                <div class="miFoto col-sm-12 col-md-6 pb-5">
                     <img src="assets/img/mi foto.jpg" alt="" class="rounded-circle perfil">
                 </div>
-                <div class="col-6 conTitulo my-auto pl-5 pr-4">
+                <div class="col-sm-12 col-md-6 my-auto pl-5 pr-4">
                     <h1 class="text-white titulo">JOSÉ MARTÍNEZ</h1><hr class="separadorHero">
                     <h3 class="text-white subTitulo pb-3">DESARROLLADOR FRONT END</h3>
                     <div class="iconos text-right pt-5 ">
@@ -72,13 +72,13 @@
         </div>
         <div class="container ">
             <div class="row ">
-                <div class="col-6  text-left">
+                <div class="d-none d-sm-none d-md-block col-md-6 text-left">
                     <p>Comencé siendo comunicador audiovisual y trabajando para la Cinecteca Nacional de Chile como
                         montajista y catalogador, luego esetudié post producción de Video animación  y efectos especiales,
                         trabajé en peliculas como post productor y en agencias de publicidad.
                     </p>
                 </div>
-                <div class="col-6 text-left pb-5">
+                <div class="d-none d-sm-none d-md-block col-md-6 text-left pb-5">
                     <p>En el dia de hoy estoy fascinado con el desarrollo web Html, CSS, Javascript y todo lo que
                         pueda aprender de esto. Espero como profesional poder integrar estos dos mundos y así ampliar
                         mis perspectivas. </p>
@@ -91,12 +91,12 @@
         <h2 class="titExp text-light pt-5">MI EXPERIENCIA</h2>
         <div class="container  py-3">
             <div class="row ">
-                <div class="col-6 text-center awesome">
+                <div class="col-sm-12 col-md-6 col-lg-6 text-center awesome">
                     <i class="fas fa-film"></i>
                     <p class="font-weight-bold m-0">Cineteca Nacional</p>
                     <p class="">2015 - 2017</p> 
                 </div>
-                <div class="col-6 text-center awesome">
+                <div class="col-sm-12 col-md-6 col-lg-6 text-center awesome">
                     <i class="fas fa-laptop"></i>
                     <p class="font-weight-bold m-0">Acción Espiral</p>
                     <p>2017 - 2019</p>
@@ -110,11 +110,9 @@
                     <li data-target="#Carru" data-slide-to="0" class="active"></li>
                     <li data-target="#Carru" data-slide-to="1"></li>
                 </ol>
-
                 <div class="carousel-inner text-center my-2 py-4 rounded fondoCar ">
                 
                     <div class="carousel-item active ">
-                    
                         <div class="row">
                             <div class="col-3 px-0 pb-4" >
                                 <img src="assets/img/Html.png" class="codeIcon">
@@ -132,7 +130,6 @@
                     
                     </div>
                     <div class="carousel-item">
-               
                         <div class="row">
                             <div class="col-3 px-0 pb-4" >
                                 <img src="assets/img/After Effects.png" class="codeIcon">
@@ -148,81 +145,90 @@
                             </div>
                         </div>
                     </div>
-              
                 </div>
             </div>
         </div>
-    
     </section>
+    
     <section class="trabajos text-center">
         
         <div class="container-fluid">
-            <div class="row pt-3">
-                    <div class="col-4 pt-5 mx-0 px-0">
+        <div class="row pt-3">
+                    <div class="col-sm-12 col-md-4 col-lg-4 pt-5 mx-0 px-0">
                         <h2>MIS ÚLTIMOS TRABAJOS</h2>
                         <button class="btn btn-outline-light mt-5">Suscríbete</button>
                     </div>
-                    <div class="col-8 py-5">
+                    <div class="col-sm-12 col-md-8 col-lg-8 py-5 ">
                         
-                        <div class="row">          
-                            <div class="col mr-3 px-0">
-                                <div class="card" style="height: 230px;">
-                                        <img src="assets/img/Olivia Ros.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Olivia Ros</h5>
-                                        <p class="card-text">Comidas del fin del mundo</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col mr-3 pr-0">
-                                <div class="card" style="height: 230px;">
-                                        <img src="assets/img/Ricomida.png " class="card-img-top" alt="...">
-                                    <div class="card-body">
+                        <div class="row ">          
+                            <div class="col">
+                                <div class="card-deck w-100">
+                                    <div class="card ">
+                                      <img src="assets/img/Ricomida.png" class="card-img-top" alt="...">
+                                      <div class="card-body ">
                                         <h5 class="card-title">Ricomida</h5>
-                                        <p class="card-text">Pizzas a piacere</p>
+                                        <p class="card-text">Las Mejores pizzas.</p>
+                                      </div>
+                                      <div class="card-footer">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                      </div>
                                     </div>
-                                </div>
+                                    <div class="card">
+                                      <img src="assets/img/Olivia Ros.png" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Olivia Ros</h5>
+                                        <p class="card-text">Comidas del fin del mundo.</p>
+                                      </div>
+                                      <div class="card-footer">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                      </div>
+                                    </div>
+                                    <div class="card">
+                                      <img src="assets/img/cuppon.png" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Cuppon</h5>
+                                        <p class="card-text">Ven por tus descuentos.</p>
+                                      </div>
+                                      <div class="card-footer">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                      </div>
+                                    </div>
+                                  </div>
                             </div>
-
-                            <div class="col mr-3">
-                                <div class="card " style="height: 230px;">
-                                        <img src="assets/img/Suricata.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
+                        <div class="row mt-4  ">
+                            <div class="col ">
+                                <div class="card-deck w-100">
+                                    <div class="card">
+                                      <img src="assets/img/Suricata.png" class="card-img-top" alt="...">
+                                      <div class="card-body">
                                         <h5 class="card-title">Suricata</h5>
-                                        <p class="card-text">Las mejores ofertas</p>
+                                        <p class="card-text">Comida para la ocasión.</p>
+                                      </div>
+                                      <div class="card-footer">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                      </div>
                                     </div>
-                                </div>
-                            </div>
-                
-                        </div>
-                        <div class="row mt-4">
-                            <div class="col mr-3 px-0">
-                                <div class="card" style="height: 230px;">
-                                        <img src="assets/img/iguana.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Iguana Page</h5>
-                                        <p class="card-text">El maravilloso mundo de las iguanas</p>
+                                    <div class="card">
+                                      <img src="assets/img/iguana.png" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Iguana page</h5>
+                                        <p class="card-text">Divertete junto a iguanas.</p>
+                                      </div>
+                                      <div class="card-footer">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                      </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col mr-3 pr-0">
-                                <div class="card" style="height: 230px;">
-                                        <img src="assets/img/cuppon.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Olivia Ros</h5>
-                                        <p class="card-text">Comidas del fin del mundo</p>
+                                    <div class="card">
+                                      <img src="assets/img/meet&coffee.png" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Meet & Coffee</h5>
+                                        <p class="card-text">Tecnologia y más.</p>
+                                      </div>
+                                      <div class="card-footer">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                      </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col mr-3">
-                                <div class="card" style="height: 230px;">
-                                        <img src="assets/img/meet&coffee.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Olivia Ros</h5>
-                                        <p class="card-text">Comidas del fin del mundo</p>
-                                    </div>
-                                </div>
+                                  </div>
                             </div>
                         </div>
                     </div>
@@ -238,6 +244,15 @@
         data-cui-pill-button-color="#0000FF"></div><script 
         src="https://public-assets.typeform.com/confab/embed.js" async></script>
     </section>
+
+    <footer class="pie text-center text-white pt-4 ">
+        <a href="index.html"><h1 class="logoLetras pb-4 ">JM</h1></a>
+        <a href="https://github.com/jose-269"><i class="fab fa-github fa-4x"></i></a>
+        <a href="https://www.linkedin.com/in/jos%C3%A9-luis-mart%C3%ADnez-valdivia-38899630/">
+        <i class="fab fa-linkedin fa-4x px-4"></i></a>
+        <a href="https://youtu.be/iqke2ws-tG0"><i class="fab fa-youtube fa-4x"></i></a>
+        <p class="pt-4 pb-2 m-0">Todos los derechos reservados.</p>
+    </footer>
 
     <!--Jquery v 3.5.1-->
 <script src="https://code.jquery.com/jquery-3.5.1.js" 
