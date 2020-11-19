@@ -75,14 +75,14 @@ nav .logo-letras {
 }
 
 .miExperiencia {
-    background-color: #474747;
+    background-color: #064D53;
 }
 
 .titExp {
     font-weight: 700;
     font-size: 65px;
     font-family: 'Oswald', sans-serif;
-    color: #474747;
+    
     width: 80%;
     margin: 0 auto;
     text-align: center;
@@ -95,14 +95,14 @@ nav .logo-letras {
 
 
 .awesome {
-    color:#064D53;
+    color:#fff;
     font-size: 150px;
     height: 310px;
 }
 
 .awesome p{
     font-size: 28px;
-    color: #474747;
+    color: #fff;
    
 }
 
@@ -111,13 +111,31 @@ nav .logo-letras {
     width: 56px;
 }
 
-
+.carousel-inner {
+    border: 5px solid #fff;
+}
 
 .carousel-indicators li {
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color:#064D53;
+}
+
+.trabajos {
+    background-color: #000;
+   
+}
+
+.trabajos h2 {
+    font-weight: 700;
+    font-size: 65px;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+}
+
+.trabajos h2 {
+    padding-top: 155px;
 }
 
 
