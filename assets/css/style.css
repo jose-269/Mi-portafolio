@@ -172,10 +172,17 @@ nav .logoLetras {
     padding-top: 110px;
 }
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:992px) and (min-width:767px){
+    .trabajos h2 {
+        padding-left: 1rem;
+    }
+}
+
+@media only screen and (max-width:767px){
     .trabajos h2 {
         font-size: 35px;
-        padding-top: 80px
+        padding-top: 80px;
+        padding-left: 20px;
     }
 }
 
