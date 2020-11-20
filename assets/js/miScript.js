@@ -14,14 +14,6 @@ $(document).ready(function(){
         }
     });
 
-
-
-    $(".container-fluid").click(function(){
-        alert("Ingresa tus datos por favor!!")
-    })
-
-    /* Esto no funcionó */
-
     $(".container-fluid a").click(function(alert){
         if (this.hash !== "") {
             alert.preventDefault();
@@ -30,11 +22,19 @@ $(document).ready(function(){
 
             $("html, body").animate({
                 scrollTop: $(gato).offset().top
-            },800, function(){
+            },1500, function(){
                 window.location.hash = gato;
             });
         }
     });
+
+    $(".container-fluid .ctcboton").click(function(){
+        alert("Ingresa tus datos por favor!!")
+    })
+
+    
+
+   
 
 
     $('[data-toggle="popover"]').popover()

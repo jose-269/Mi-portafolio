@@ -1,31 +1,47 @@
+:root {
+    --lightBlue-color: #064D53;
+    --yellow-color:    #F2F208;
+    --white-color:     #fff;
+    --grey-color:      #474747;
+    --black-color:     #000;
+}
+
+
 * {
     font-family: 'Noto Sans', sans-serif;
     
 }
 
-body {
-    margin: 0;
-    padding: 0;
+.barra, .miExperiencia, .pie {
+    background-color: var(--lightBlue-color);
 }
 
+.fondoCar, .descripcion {
+    background-color: var(--yellow-color);
+}
 
+.awesome, .awesome p, .iconos i {
+    color: var(--white-color);
+}
+
+.titulo, .titExp, .trabajos h2{
+    font-weight: 700;
+    font-size: 4rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.subTitulo, .descTitulo, .awesome p {
+    font-size: 1.75rem;
+}
 
 nav .logoLetras {
     font-family: 'Monoton', cursive;
-    font-size: 40px;
-    
-    letter-spacing: 12px;
-}
-
-.logoLetras {
-    font-family: 'Monoton', cursive;
-    font-size: 40px;
-    letter-spacing: 12px;
+    font-size: 2.5rem;
+    letter-spacing: 0.75rem;
 }
 
 .barra {
-    background-color: #064D53;
-    border-bottom: 5px solid #fff;
+    border-bottom: 0.3125rem solid var(--white-color);
     position: fixed;
     width: 100vw;
     z-index: 10;
@@ -33,7 +49,7 @@ nav .logoLetras {
 }
 
 .hero {
-    background-image: url("../img/ciudad\ PS3.png");
+    background-image: url("../img/ciudad01.png");
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -41,77 +57,64 @@ nav .logoLetras {
 
 .perfil {
     width: 65%;
-    border: 5px solid #fff;
+    border: 0.3125rem solid var(--white-color);
 }   
 
 .titulo {
-    
-    font-size: 63px;
     margin: 0;
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 6px;
+    letter-spacing:  0.375rem;
 }
 
 @media only screen and (max-width:367px){
     .titulo {
-        font-size: 50px;
+        font-size: 3.125rem;
     }
 }
 
 .separadorHero {
-    background-color: #fff;
-    border-width: 5px;
+    background-color: var(--white-color);
+    border-width: 0.3rem;
     margin-left: 0;
-    margin-top: 5px;
+    margin-top: 0.3rem;
 }
 
 .subTitulo {
-    font-size: 30px;
     font-weight: 700;
     
 }
 
 .iconos i {
-    padding-left: 15px;
-    color: #fff;
+    padding-left: 1rem;
+    
 }
 
 .descripcion {
-    background-color: #F2F208 ;
-    padding: 50px 0 10px 0 ;
+    padding: 3.125rem 0 0.6rem 0 ;
 }
 
 .descTitulo {
-    font-size: 28px;
-    letter-spacing: 0.5px;
-    line-height: 38px;
-    color: #474747;
+    letter-spacing: 0.03125rem;
+    line-height: 2.375rem;
+    color: var(--grey-color);
     
 }
 
 .separadorDesc {
-    background-color: #474747;
-    border-width: 5px;
-    width: 650px;
-    margin-top: 100px;
+    background-color: var(--grey-color);
+    border-width:  0.3125rem;
+    width: 40.625rem;
+    margin-top: 6.25rem;
     
 }
 
 @media only screen and (max-width:767px) {
     .separadorDesc{
-        width: 300px;
+        width: 18.75rem;
         
     }
 }
 
-.miExperiencia {
-    background-color: #064D53;
-}
-
 .titExp {
-    font-weight: 700;
-    font-size: 65px;
-    font-family: 'Oswald', sans-serif;
     width: 80%;
     margin: 0 auto;
     text-align: center;
@@ -119,57 +122,38 @@ nav .logoLetras {
 
 @media only screen and (max-width:767px) {
     .titExp {
-        font-size: 50px;
+        font-size: 3.125rem;
     }
 }
 
-.fondoCar {
-    background-color: #F2F208;
-}
-
-
 .awesome {
-    color:#fff;
-    font-size: 150px;
-    height: 310px;
+    font-size: 9.375rem;
+    height: 19.375rem;
 }
 
-.awesome p{
-    font-size: 28px;
-    color: #fff;
-   
-}
 
 .codeIcon {
-    height: 56px;
-    width: 56px;
+    height: 3.5rem;
+    width: 3.5rem;
 }
 
 .carousel-inner {
-    border: 5px solid #fff;
+    border: 0.3125rem solid var(--white-color);
 }
 
 .carousel-indicators li {
-    width: 10px;
-    height: 10px;
+    width: 0.625rem;
+    height: 0.625rem;
     border-radius: 50%;
-    background-color:#064D53;
+    background-color: var(--lightBlue-color);
 }
 
 .trabajos {
-    background-color: #000;
-   
-}
+    background-color: var(--black-color);
+ }
 
 .trabajos h2 {
-    font-weight: 700;
-    font-size: 65px;
-    font-family: 'Oswald', sans-serif;
-    color: #fff;
-}
-
-.trabajos h2 {
-    padding-top: 110px;
+    padding-top: 6.875rem;
 }
 
 @media only screen and (max-width:992px) and (min-width:767px){
@@ -180,35 +164,25 @@ nav .logoLetras {
 
 @media only screen and (max-width:767px){
     .trabajos h2 {
-        font-size: 35px;
-        padding-top: 80px;
-        padding-left: 20px;
-    }
+        font-size: 3.9375rem;
+        padding-top: 0px;
+        }
 }
 
 @media only screen and (max-width:992px) and (min-width:576px){
     .card-body {
-        padding: 0;
+        padding: 0rem;
     }
 }
 
 .pie {
-    background-color:  #064D53;
-    border-top: 5px solid #000;
+    
+    border-top: 5px solid var(--black-color);
 }
 
 .pie .logoLetras {
     width: 50%;
     margin: 0 auto;
-}
-
-.pie a {
-    
-    color: #fff;
-}
-
-.pie p {
-    font-size: 20px;
 }
 
 .column {
