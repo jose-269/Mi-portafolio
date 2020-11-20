@@ -1,6 +1,13 @@
 * {
     font-family: 'Noto Sans', sans-serif;
+    
 }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
 
 
 nav .logoLetras {
@@ -169,6 +176,12 @@ nav .logoLetras {
     .trabajos h2 {
         font-size: 35px;
         padding-top: 80px
+    }
+}
+
+@media only screen and (max-width:992px) and (min-width:576px){
+    .card-body {
+        padding: 0;
     }
 }
 
