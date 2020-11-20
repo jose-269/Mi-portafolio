@@ -165,9 +165,10 @@ nav .logoLetras {
     padding-top: 110px;
 }
 
-@media only screen and (max-width:920px){
+@media only screen and (max-width:500px){
     .trabajos h2 {
-        font-size: 55px;
+        font-size: 35px;
+        padding-top: 80px
     }
 }
 
@@ -190,6 +191,9 @@ nav .logoLetras {
     font-size: 20px;
 }
 
+.column {
+    display: inline-block;
+}
 
 
 
